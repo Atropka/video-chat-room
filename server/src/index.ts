@@ -44,6 +44,6 @@ if (fs.existsSync(clientIndex)) {
 
 registerSocketHandlers(io);
 
-httpServer.listen(port, () => {
-  console.log(`video-chat-room server listening on http://localhost:${port}`);
+httpServer.listen(port, '0.0.0.0', () => {
+  console.log(`video-chat-room server listening on port ${port}`);
 });
