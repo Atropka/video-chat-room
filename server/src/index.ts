@@ -7,7 +7,7 @@ import { Server } from 'socket.io';
 import { registerSocketHandlers } from './socketHandlers.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const clientDist = path.resolve(__dirname, '../../client/dist');
+const clientDist = path.resolve(__dirname, '../../../client/dist');
 const port = Number(process.env.PORT || 3000);
 
 const app = express();
