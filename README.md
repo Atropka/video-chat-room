@@ -73,7 +73,7 @@ npm run dev:client
 
 Vite проксирует `/socket.io` и `/health` на backend.
 
-Если возникают трудности с запуском frontend, можно попробовать на отдельный хост
+Если возникают трудности с доступом к Vite dev server, можно явно указать loopback-адрес:
 
 ```bash
 npm --prefix client run dev -- --host 127.0.0.1
