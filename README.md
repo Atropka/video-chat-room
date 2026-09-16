@@ -41,6 +41,11 @@ npm install
 
 Проект использует npm workspaces, поэтому зависимости `client` и `server` устанавливаются одной командой.
 
+```bash
+npm --prefix server  install
+npm --prefix client  install
+```
+
 ## Разработка
 
 Запустить frontend и backend одновременно:
@@ -63,6 +68,12 @@ npm run dev:client
 - health check: `http://localhost:3000/health`
 
 Vite проксирует `/socket.io` и `/health` на backend.
+
+Если возникают трудности с запуском frontend, можно попробовать на отдельный хост
+
+```bash
+npm --prefix client run dev -- --host 127.0.0.1
+```
 
 ## Type checking
 
