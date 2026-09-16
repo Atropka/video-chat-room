@@ -1,0 +1,25 @@
+{
+  "name": "video-chat-room",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "test": "npm --prefix server test",
+    "typecheck": "npm run typecheck:server && npm run typecheck:client",
+    "typecheck:server": "npm --prefix server run typecheck",
+    "typecheck:client": "npm --prefix client run typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
