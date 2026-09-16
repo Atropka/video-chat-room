@@ -18,6 +18,10 @@ MVP группового видеочата на React + Vite + Socket.io + WebR
 - выход из комнаты и повторный вход;
 - адаптивная вёрстка для узких экранов.
 
+## Песочница
+
+Можно проверить функционал без установки по ссылке: https://video-chat-room-sdkz.onrender.com
+
 ## Стек
 
 - Frontend: React 18, Vite, TypeScript, React Router 6, Socket.io Client.
